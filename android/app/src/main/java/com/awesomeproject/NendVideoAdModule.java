@@ -15,6 +15,7 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 import net.nend.android.NendAdRewardItem;
 import net.nend.android.NendAdRewardedListener;
+import net.nend.android.NendAdUserFeature;
 import net.nend.android.NendAdVideo;
 
 import java.util.ArrayList;
@@ -69,6 +70,24 @@ abstract class NendVideoAdModule<V extends NendAdVideo> extends ReactContextBase
                 final V videoAd = instanceCache.get(spotId);
                 if (videoAd != null) {
                     videoAd.setUserId(userId);
+                }
+            }
+        });
+    }
+
+    @ReactMethod
+    public void setUserFeature(final String spotId, final int refId) {
+        UiThreadUtil.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                final NendUserFeatureModule module =
+                        getReactApplicationContext().getNativeModule(NendUserFeatureModule.class);
+                final V videoAd = instanceCache.get(spotId);
+                if (module != null && videoAd != null) {
+                    NendAdUserFeature.Builder builder = module.getBuilder(refId);
+                    if (builder != null) {
+                        videoAd.setUserFeature(builder.build());
+                    }
                 }
             }
         });

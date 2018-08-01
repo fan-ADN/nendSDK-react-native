@@ -16,7 +16,8 @@ public class NendAdPackage implements ReactPackage {
                 new NendRewardedVideoAdModule(reactContext),
                 new NendInterstitialVideoAdModule(reactContext),
                 new NendInterstitialAdModule(reactContext),
-                new NendNativeAdModule(reactContext));
+                new NendNativeAdModule(reactContext),
+                new NendUserFeatureModule(reactContext));
     }
 
     @Override

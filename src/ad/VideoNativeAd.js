@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 import type EmitterSubscription from 'EmitterSubscription';
+import UserFeature from './UserFeature';
 
 const videoNativeAd = NativeModules.NendVideoNativeAd;
 const eventEmitter = new NativeEventEmitter(videoNativeAd);
@@ -39,8 +40,6 @@ export class VideoNativeAd {
         this.logoImageUrl = data.logoImageUrl;
 
         this._subscription = eventEmitter.addListener('VideoNativeAdEventListener', (args: {refId: number, eventType: string}) => {
-            console.log(`VideoNativeAdEventListener: ${JSON.stringify(args)}`);
-            
             if (args.refId === this.videoId) {
                 switch (args.eventType) {
                     case 'onImpression':
@@ -76,7 +75,7 @@ export class VideoNativeAd {
 export type VideoClickOption = 'FullScreen' | 'LP';
 
 export class VideoNativeAdLoader {
-    _spotId: string;
+    +_spotId: string;
 
     constructor(spotId: string, apiKey: string, clickOption: VideoClickOption = 'FullScreen') {
         this._spotId = spotId;
@@ -86,6 +85,14 @@ export class VideoNativeAdLoader {
 
     loadAd(): Promise<VideoNativeAd> {
         return videoNativeAd.loadAd(this._spotId).then((data: Object) => Promise.resolve(new VideoNativeAd(data)));
+    }
+
+    setUserId(userId: string) {
+        videoNativeAd.setUserId(this._spotId, userId);
+    }
+
+    setUserFeature(userFeature: UserFeature) {
+        videoNativeAd.setUserFeature(this._spotId, userFeature.getReferenceId());
     }
 
     destroy() {

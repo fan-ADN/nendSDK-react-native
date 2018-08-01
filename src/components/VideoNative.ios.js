@@ -15,6 +15,7 @@ import {
 import {VideoNativeAdLoader} from '../ad/VideoNativeAd';
 import type {VideoNativeAd} from '../ad/VideoNativeAd';
 import MediaView from '../ad/MediaView';
+import UserFeature from '../ad/UserFeature';
 import Button from './Button';
 
 type State = {
@@ -40,6 +41,19 @@ export default class VideoNative extends React.Component<{}, State> {
     constructor() {
         super();
         this._adLoader = new VideoNativeAdLoader('887595', 'e7c1e68e7c16e94270bf39719b60534596b1e70d');
+
+        // https://github.com/fan-ADN/nendSDK-iOS/wiki/%E5%8B%95%E7%94%BB%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%E5%BA%83%E5%91%8A%E5%AE%9F%E8%A3%85%E6%89%8B%E9%A0%86#%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E5%B1%9E%E6%80%A7%E3%81%AE%E8%A8%AD%E5%AE%9A
+        const feature = new UserFeature();
+        feature.setGender('Female');
+        feature.setAge(20);
+        feature.setBirthday(2000, 1, 1);
+        feature.addCustomValue('customStringValue', 'stringValue');
+        feature.addCustomValue('customBooleanValue', true);
+        feature.addCustomValue('customIntegerValue', 12345);
+        feature.addCustomValue('customDoubleValue', 123.45);
+        this._adLoader.setUserFeature(feature);
+        feature.destroy();
+        
         this.state = {
             title: '',
             description: '',

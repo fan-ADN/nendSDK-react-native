@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 import type EmitterSubscription from 'EmitterSubscription';
+import UserFeature from './UserFeature';
 
 const NendRewardedVideoAd = NativeModules.NendRewardedVideoAd;
 const NendInterstitialVideoAd = NativeModules.NendInterstitialVideoAd;
@@ -130,7 +131,7 @@ export class RewardedVideoAd extends VideoAd {
         return NendRewardedVideoAd.loadAd(this.spotId);
     }
 
-    isLoaded(): boolean {
+    isLoaded(): Promise<boolean> {
         return NendRewardedVideoAd.isLoaded(this.spotId);
     }
 
@@ -140,6 +141,10 @@ export class RewardedVideoAd extends VideoAd {
 
     setUserId(userId: string) {
         NendRewardedVideoAd.setUserId(this.spotId, userId);
+    }
+
+    setUserFeature(userFeature: UserFeature) {
+        NendRewardedVideoAd.setUserFeature(this.spotId, userFeature.getReferenceId());
     }
 
     destroy() {
@@ -164,7 +169,7 @@ export class RewardedVideoAd extends VideoAd {
         return NendInterstitialVideoAd.loadAd(this.spotId);
     }
 
-    isLoaded(): boolean {
+    isLoaded(): Promise<boolean> {
         return NendInterstitialVideoAd.isLoaded(this.spotId);
     }
 
@@ -174,6 +179,10 @@ export class RewardedVideoAd extends VideoAd {
 
     setUserId(userId: string) {
         NendInterstitialVideoAd.setUserId(this.spotId, userId);
+    }
+
+    setUserFeature(userFeature: UserFeature) {
+        NendInterstitialVideoAd.setUserFeature(this.spotId, userFeature.getReferenceId());
     }
 
     addFallbackFullBoard(fullBoardSpotId: string, fullBoardApiKey: string) {

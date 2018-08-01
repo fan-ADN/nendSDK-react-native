@@ -34,8 +34,7 @@ export default class MediaView extends React.Component<Props, State> {
     }
 
     componentDidUpdate(prevProps: Props, prevState: State) {
-        console.log(`componentDidUpdate: ${JSON.stringify(prevState)}`);
-        if (this.state.videoId > 0) {
+        if (this.state.videoId > 0 && this.state.videoId != prevState.videoId) {
             UIManager.dispatchViewManagerCommand(
                 findNodeHandle(this),
                 UIManager.RCTNendMediaView.Commands.setMedia,

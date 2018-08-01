@@ -36,15 +36,20 @@
 		2DCD954D1E0B4F2C00145EB5 /* AwesomeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AwesomeProjectTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
-		6954CDA6210086BB0018DCFB /* RCTNendVideoNativeAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6954CDA5210086BB0018DCFB /* RCTNendVideoNativeAd.m */; };
-		6954CDCE210086CA0018DCFB /* RCTNendMediaViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6954CDCD210086CA0018DCFB /* RCTNendMediaViewManager.m */; };
-		6963C85720F5D25A0090E028 /* RCTNendRewardedVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6963C85620F5D25A0090E028 /* RCTNendRewardedVideoAd.m */; };
-		6963C85A20F5D3240090E028 /* RCTNendInterstitialVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6963C85920F5D3240090E028 /* RCTNendInterstitialVideoAd.m */; };
-		6963C85D20F5D6D80090E028 /* RCTNendVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6963C85C20F5D6D80090E028 /* RCTNendVideoAd.m */; };
-		697114A620FD850A00FED8DA /* RCTNendNativeAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 697114A520FD850A00FED8DA /* RCTNendNativeAd.m */; };
-		69C9836F20F327DF00CD19BF /* RCTNendAdViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C9836E20F327DF00CD19BF /* RCTNendAdViewManager.m */; };
-		69FE2B9920F7421100AEAFF8 /* RCTNendInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FE2B9820F7421100AEAFF8 /* RCTNendInterstitialAd.m */; };
-		69FE2BC120F743CF00AEAFF8 /* RCTNendPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FE2BC020F743CF00AEAFF8 /* RCTNendPromise.m */; };
+		692E4F29210EB1B5004ECCA4 /* RCTNendAdViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692E4F28210EB1B5004ECCA4 /* RCTNendAdViewManager.swift */; };
+		692E4F50210EC115004ECCA4 /* RCTNendAdViewManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 692E4F4F210EC115004ECCA4 /* RCTNendAdViewManagerBridge.m */; };
+		692E4F52210ED75B004ECCA4 /* RCTNendInterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692E4F51210ED75B004ECCA4 /* RCTNendInterstitialAd.swift */; };
+		692E4F54210ED7AE004ECCA4 /* RCTNendInterstitialAdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 692E4F53210ED7AE004ECCA4 /* RCTNendInterstitialAdBridge.m */; };
+		692E4F56210EF10E004ECCA4 /* RCTNendVideoAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692E4F55210EF10E004ECCA4 /* RCTNendVideoAd.swift */; };
+		692E4F58210EF13B004ECCA4 /* RCTNendVideoAdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 692E4F57210EF13B004ECCA4 /* RCTNendVideoAdBridge.m */; };
+		69E258DD210FF59E00F0F1DF /* RCTNendNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E258DC210FF59E00F0F1DF /* RCTNendNativeAd.swift */; };
+		69E25906210FF5D800F0F1DF /* RCTNendNativeAdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E25905210FF5D800F0F1DF /* RCTNendNativeAdBridge.m */; };
+		69E2590A2110232500F0F1DF /* RCTNendMediaViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E259092110232500F0F1DF /* RCTNendMediaViewManager.swift */; };
+		69E2590C2110234C00F0F1DF /* RCTNendVideoNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2590B2110234C00F0F1DF /* RCTNendVideoNativeAd.swift */; };
+		69E2590E2110237A00F0F1DF /* RCTNendVideoNativeAdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E2590D2110237A00F0F1DF /* RCTNendVideoNativeAdBridge.m */; };
+		69E259102110238F00F0F1DF /* RCTNendMediaViewManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E2590F2110238F00F0F1DF /* RCTNendMediaViewManagerBridge.m */; };
+		69E259132110497F00F0F1DF /* RCTNendUserFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E259122110497F00F0F1DF /* RCTNendUserFeature.swift */; };
+		69E2591521104F0300F0F1DF /* RCTNendUserFeatureBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E2591421104F0300F0F1DF /* RCTNendUserFeatureBridge.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		F215D8659DF6D08755F6FA70 /* Pods_AwesomeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2E6C331E3990CCA56A603E /* Pods_AwesomeProject.framework */; };
@@ -350,24 +355,21 @@
 		2D02E4901E0B4A5D006451C7 /* AwesomeProject-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AwesomeProject-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
-		6954CDA4210086BB0018DCFB /* RCTNendVideoNativeAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNendVideoNativeAd.h; sourceTree = "<group>"; };
-		6954CDA5210086BB0018DCFB /* RCTNendVideoNativeAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendVideoNativeAd.m; sourceTree = "<group>"; };
-		6954CDCC210086CA0018DCFB /* RCTNendMediaViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNendMediaViewManager.h; sourceTree = "<group>"; };
-		6954CDCD210086CA0018DCFB /* RCTNendMediaViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendMediaViewManager.m; sourceTree = "<group>"; };
-		6963C85520F5D25A0090E028 /* RCTNendRewardedVideoAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNendRewardedVideoAd.h; sourceTree = "<group>"; };
-		6963C85620F5D25A0090E028 /* RCTNendRewardedVideoAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendRewardedVideoAd.m; sourceTree = "<group>"; };
-		6963C85820F5D3240090E028 /* RCTNendInterstitialVideoAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNendInterstitialVideoAd.h; sourceTree = "<group>"; };
-		6963C85920F5D3240090E028 /* RCTNendInterstitialVideoAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendInterstitialVideoAd.m; sourceTree = "<group>"; };
-		6963C85B20F5D6D80090E028 /* RCTNendVideoAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNendVideoAd.h; sourceTree = "<group>"; };
-		6963C85C20F5D6D80090E028 /* RCTNendVideoAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendVideoAd.m; sourceTree = "<group>"; };
-		697114A420FD850A00FED8DA /* RCTNendNativeAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNendNativeAd.h; sourceTree = "<group>"; };
-		697114A520FD850A00FED8DA /* RCTNendNativeAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendNativeAd.m; sourceTree = "<group>"; };
-		69C9836D20F327DF00CD19BF /* RCTNendAdViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNendAdViewManager.h; sourceTree = "<group>"; };
-		69C9836E20F327DF00CD19BF /* RCTNendAdViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendAdViewManager.m; sourceTree = "<group>"; };
-		69FE2B9720F7421100AEAFF8 /* RCTNendInterstitialAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNendInterstitialAd.h; sourceTree = "<group>"; };
-		69FE2B9820F7421100AEAFF8 /* RCTNendInterstitialAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendInterstitialAd.m; sourceTree = "<group>"; };
-		69FE2BBF20F743CF00AEAFF8 /* RCTNendPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNendPromise.h; sourceTree = "<group>"; };
-		69FE2BC020F743CF00AEAFF8 /* RCTNendPromise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendPromise.m; sourceTree = "<group>"; };
+		692E4F27210EB1B4004ECCA4 /* AwesomeProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AwesomeProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		692E4F28210EB1B5004ECCA4 /* RCTNendAdViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTNendAdViewManager.swift; sourceTree = "<group>"; };
+		692E4F4F210EC115004ECCA4 /* RCTNendAdViewManagerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendAdViewManagerBridge.m; sourceTree = "<group>"; };
+		692E4F51210ED75B004ECCA4 /* RCTNendInterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTNendInterstitialAd.swift; sourceTree = "<group>"; };
+		692E4F53210ED7AE004ECCA4 /* RCTNendInterstitialAdBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendInterstitialAdBridge.m; sourceTree = "<group>"; };
+		692E4F55210EF10E004ECCA4 /* RCTNendVideoAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTNendVideoAd.swift; sourceTree = "<group>"; };
+		692E4F57210EF13B004ECCA4 /* RCTNendVideoAdBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendVideoAdBridge.m; sourceTree = "<group>"; };
+		69E258DC210FF59E00F0F1DF /* RCTNendNativeAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTNendNativeAd.swift; sourceTree = "<group>"; };
+		69E25905210FF5D800F0F1DF /* RCTNendNativeAdBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendNativeAdBridge.m; sourceTree = "<group>"; };
+		69E259092110232500F0F1DF /* RCTNendMediaViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTNendMediaViewManager.swift; sourceTree = "<group>"; };
+		69E2590B2110234C00F0F1DF /* RCTNendVideoNativeAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTNendVideoNativeAd.swift; sourceTree = "<group>"; };
+		69E2590D2110237A00F0F1DF /* RCTNendVideoNativeAdBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendVideoNativeAdBridge.m; sourceTree = "<group>"; };
+		69E2590F2110238F00F0F1DF /* RCTNendMediaViewManagerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendMediaViewManagerBridge.m; sourceTree = "<group>"; };
+		69E259122110497F00F0F1DF /* RCTNendUserFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTNendUserFeature.swift; sourceTree = "<group>"; };
+		69E2591421104F0300F0F1DF /* RCTNendUserFeatureBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNendUserFeatureBridge.m; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		95F036F81057C7E491606AF0 /* Pods-AwesomeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -514,6 +516,7 @@
 		13B07FAE1A68108700A75B9A /* AwesomeProject */ = {
 			isa = PBXGroup;
 			children = (
+				69E25903210FF5AA00F0F1DF /* nend */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -521,24 +524,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				69C9836D20F327DF00CD19BF /* RCTNendAdViewManager.h */,
-				69C9836E20F327DF00CD19BF /* RCTNendAdViewManager.m */,
-				6963C85B20F5D6D80090E028 /* RCTNendVideoAd.h */,
-				6963C85C20F5D6D80090E028 /* RCTNendVideoAd.m */,
-				6963C85520F5D25A0090E028 /* RCTNendRewardedVideoAd.h */,
-				6963C85820F5D3240090E028 /* RCTNendInterstitialVideoAd.h */,
-				6963C85620F5D25A0090E028 /* RCTNendRewardedVideoAd.m */,
-				6963C85920F5D3240090E028 /* RCTNendInterstitialVideoAd.m */,
-				69FE2B9720F7421100AEAFF8 /* RCTNendInterstitialAd.h */,
-				69FE2B9820F7421100AEAFF8 /* RCTNendInterstitialAd.m */,
-				69FE2BBF20F743CF00AEAFF8 /* RCTNendPromise.h */,
-				69FE2BC020F743CF00AEAFF8 /* RCTNendPromise.m */,
-				697114A420FD850A00FED8DA /* RCTNendNativeAd.h */,
-				697114A520FD850A00FED8DA /* RCTNendNativeAd.m */,
-				6954CDA4210086BB0018DCFB /* RCTNendVideoNativeAd.h */,
-				6954CDA5210086BB0018DCFB /* RCTNendVideoNativeAd.m */,
-				6954CDCC210086CA0018DCFB /* RCTNendMediaViewManager.h */,
-				6954CDCD210086CA0018DCFB /* RCTNendMediaViewManager.m */,
+				692E4F27210EB1B4004ECCA4 /* AwesomeProject-Bridging-Header.h */,
 			);
 			name = AwesomeProject;
 			sourceTree = "<group>";
@@ -582,6 +568,35 @@
 				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		69E25903210FF5AA00F0F1DF /* nend */ = {
+			isa = PBXGroup;
+			children = (
+				692E4F28210EB1B5004ECCA4 /* RCTNendAdViewManager.swift */,
+				692E4F51210ED75B004ECCA4 /* RCTNendInterstitialAd.swift */,
+				692E4F55210EF10E004ECCA4 /* RCTNendVideoAd.swift */,
+				69E258DC210FF59E00F0F1DF /* RCTNendNativeAd.swift */,
+				69E2590B2110234C00F0F1DF /* RCTNendVideoNativeAd.swift */,
+				69E259092110232500F0F1DF /* RCTNendMediaViewManager.swift */,
+				69E259122110497F00F0F1DF /* RCTNendUserFeature.swift */,
+				69E25904210FF5B500F0F1DF /* bridge */,
+			);
+			name = nend;
+			sourceTree = "<group>";
+		};
+		69E25904210FF5B500F0F1DF /* bridge */ = {
+			isa = PBXGroup;
+			children = (
+				692E4F4F210EC115004ECCA4 /* RCTNendAdViewManagerBridge.m */,
+				692E4F53210ED7AE004ECCA4 /* RCTNendInterstitialAdBridge.m */,
+				692E4F57210EF13B004ECCA4 /* RCTNendVideoAdBridge.m */,
+				69E25905210FF5D800F0F1DF /* RCTNendNativeAdBridge.m */,
+				69E2590D2110237A00F0F1DF /* RCTNendVideoNativeAdBridge.m */,
+				69E2590F2110238F00F0F1DF /* RCTNendMediaViewManagerBridge.m */,
+				69E2591421104F0300F0F1DF /* RCTNendUserFeatureBridge.m */,
+			);
+			name = bridge;
 			sourceTree = "<group>";
 		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
@@ -1216,17 +1231,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				697114A620FD850A00FED8DA /* RCTNendNativeAd.m in Sources */,
-				69FE2BC120F743CF00AEAFF8 /* RCTNendPromise.m in Sources */,
-				6963C85A20F5D3240090E028 /* RCTNendInterstitialVideoAd.m in Sources */,
-				6954CDCE210086CA0018DCFB /* RCTNendMediaViewManager.m in Sources */,
+				692E4F50210EC115004ECCA4 /* RCTNendAdViewManagerBridge.m in Sources */,
+				69E2590A2110232500F0F1DF /* RCTNendMediaViewManager.swift in Sources */,
+				69E259132110497F00F0F1DF /* RCTNendUserFeature.swift in Sources */,
+				692E4F29210EB1B5004ECCA4 /* RCTNendAdViewManager.swift in Sources */,
+				692E4F58210EF13B004ECCA4 /* RCTNendVideoAdBridge.m in Sources */,
+				69E2590C2110234C00F0F1DF /* RCTNendVideoNativeAd.swift in Sources */,
+				69E258DD210FF59E00F0F1DF /* RCTNendNativeAd.swift in Sources */,
+				69E259102110238F00F0F1DF /* RCTNendMediaViewManagerBridge.m in Sources */,
+				69E2590E2110237A00F0F1DF /* RCTNendVideoNativeAdBridge.m in Sources */,
+				69E25906210FF5D800F0F1DF /* RCTNendNativeAdBridge.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				69C9836F20F327DF00CD19BF /* RCTNendAdViewManager.m in Sources */,
-				6963C85D20F5D6D80090E028 /* RCTNendVideoAd.m in Sources */,
+				69E2591521104F0300F0F1DF /* RCTNendUserFeatureBridge.m in Sources */,
+				692E4F52210ED75B004ECCA4 /* RCTNendInterstitialAd.swift in Sources */,
+				692E4F54210ED7AE004ECCA4 /* RCTNendInterstitialAdBridge.m in Sources */,
+				692E4F56210EF10E004ECCA4 /* RCTNendVideoAd.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				69FE2B9920F7421100AEAFF8 /* RCTNendInterstitialAd.m in Sources */,
-				6954CDA6210086BB0018DCFB /* RCTNendVideoNativeAd.m in Sources */,
-				6963C85720F5D25A0090E028 /* RCTNendRewardedVideoAd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1278,6 +1298,7 @@
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1299,6 +1320,7 @@
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = "";
@@ -1331,7 +1353,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = AwesomeProject;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AwesomeProject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1354,7 +1376,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = AwesomeProject;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AwesomeProject-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
