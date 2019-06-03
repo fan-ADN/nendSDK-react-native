@@ -1,0 +1,7 @@
+rootProject.name = 'example'
+include ':react-native-nend-bridger'
+project(':react-native-nend-bridger').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-nend-bridger/android')
+include ':react-native-gesture-handler'
+project(':react-native-gesture-handler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gesture-handler/android')
+
+include ':app'

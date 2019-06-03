@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC5EE655229B8518007851DA /* RNNendBridger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE654229B8518007851DA /* RNNendBridger.swift */; };
+		CC5EE666229B861E007851DA /* RCTNendMediaViewManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE65F229B861E007851DA /* RCTNendMediaViewManagerBridge.m */; };
+		CC5EE667229B861E007851DA /* RCTNendVideoNativeAdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE660229B861E007851DA /* RCTNendVideoNativeAdBridge.m */; };
+		CC5EE668229B861E007851DA /* RCTNendNativeAdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE661229B861E007851DA /* RCTNendNativeAdBridge.m */; };
+		CC5EE669229B861E007851DA /* RCTNendVideoAdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE662229B861E007851DA /* RCTNendVideoAdBridge.m */; };
+		CC5EE66A229B861E007851DA /* RCTNendUserFeatureBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE663229B861E007851DA /* RCTNendUserFeatureBridge.m */; };
+		CC5EE66B229B861E007851DA /* RCTNendInterstitialAdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE664229B861E007851DA /* RCTNendInterstitialAdBridge.m */; };
+		CC5EE66C229B861E007851DA /* RCTNendAdViewManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE665229B861E007851DA /* RCTNendAdViewManagerBridge.m */; };
+		CC5EE674229B862C007851DA /* RCTNendAdViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE66D229B862B007851DA /* RCTNendAdViewManager.swift */; };
+		CC5EE675229B862C007851DA /* RCTNendVideoNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE66E229B862B007851DA /* RCTNendVideoNativeAd.swift */; };
+		CC5EE676229B862C007851DA /* RCTNendUserFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE66F229B862B007851DA /* RCTNendUserFeature.swift */; };
+		CC5EE677229B862C007851DA /* RCTNendNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE670229B862B007851DA /* RCTNendNativeAd.swift */; };
+		CC5EE678229B862C007851DA /* RCTNendVideoAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE671229B862B007851DA /* RCTNendVideoAd.swift */; };
+		CC5EE679229B862C007851DA /* RCTNendInterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE672229B862B007851DA /* RCTNendInterstitialAd.swift */; };
+		CC5EE67A229B862C007851DA /* RCTNendMediaViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EE673229B862B007851DA /* RCTNendMediaViewManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC5EE64F229B8518007851DA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CC5EE651229B8518007851DA /* libRNNendBridger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNNendBridger.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5EE654229B8518007851DA /* RNNendBridger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNNendBridger.swift; sourceTree = "<group>"; };
+		CC5EE65B229B858F007851DA /* RNNendBridger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNNendBridger-Bridging-Header.h"; sourceTree = "<group>"; };
+		CC5EE65F229B861E007851DA /* RCTNendMediaViewManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNendMediaViewManagerBridge.m; sourceTree = "<group>"; };
+		CC5EE660229B861E007851DA /* RCTNendVideoNativeAdBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNendVideoNativeAdBridge.m; sourceTree = "<group>"; };
+		CC5EE661229B861E007851DA /* RCTNendNativeAdBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNendNativeAdBridge.m; sourceTree = "<group>"; };
+		CC5EE662229B861E007851DA /* RCTNendVideoAdBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNendVideoAdBridge.m; sourceTree = "<group>"; };
+		CC5EE663229B861E007851DA /* RCTNendUserFeatureBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNendUserFeatureBridge.m; sourceTree = "<group>"; };
+		CC5EE664229B861E007851DA /* RCTNendInterstitialAdBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNendInterstitialAdBridge.m; sourceTree = "<group>"; };
+		CC5EE665229B861E007851DA /* RCTNendAdViewManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTNendAdViewManagerBridge.m; sourceTree = "<group>"; };
+		CC5EE66D229B862B007851DA /* RCTNendAdViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTNendAdViewManager.swift; sourceTree = "<group>"; };
+		CC5EE66E229B862B007851DA /* RCTNendVideoNativeAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTNendVideoNativeAd.swift; sourceTree = "<group>"; };
+		CC5EE66F229B862B007851DA /* RCTNendUserFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTNendUserFeature.swift; sourceTree = "<group>"; };
+		CC5EE670229B862B007851DA /* RCTNendNativeAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTNendNativeAd.swift; sourceTree = "<group>"; };
+		CC5EE671229B862B007851DA /* RCTNendVideoAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTNendVideoAd.swift; sourceTree = "<group>"; };
+		CC5EE672229B862B007851DA /* RCTNendInterstitialAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTNendInterstitialAd.swift; sourceTree = "<group>"; };
+		CC5EE673229B862B007851DA /* RCTNendMediaViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCTNendMediaViewManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC5EE64E229B8518007851DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC5EE648229B8518007851DA = {
+			isa = PBXGroup;
+			children = (
+				CC5EE653229B8518007851DA /* RNNendBridger */,
+				CC5EE652229B8518007851DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC5EE652229B8518007851DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC5EE651229B8518007851DA /* libRNNendBridger.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC5EE653229B8518007851DA /* RNNendBridger */ = {
+			isa = PBXGroup;
+			children = (
+				CC5EE66D229B862B007851DA /* RCTNendAdViewManager.swift */,
+				CC5EE672229B862B007851DA /* RCTNendInterstitialAd.swift */,
+				CC5EE673229B862B007851DA /* RCTNendMediaViewManager.swift */,
+				CC5EE670229B862B007851DA /* RCTNendNativeAd.swift */,
+				CC5EE66F229B862B007851DA /* RCTNendUserFeature.swift */,
+				CC5EE671229B862B007851DA /* RCTNendVideoAd.swift */,
+				CC5EE66E229B862B007851DA /* RCTNendVideoNativeAd.swift */,
+				CC5EE65E229B861E007851DA /* bridge */,
+				CC5EE654229B8518007851DA /* RNNendBridger.swift */,
+				CC5EE65B229B858F007851DA /* RNNendBridger-Bridging-Header.h */,
+			);
+			path = RNNendBridger;
+			sourceTree = "<group>";
+		};
+		CC5EE65E229B861E007851DA /* bridge */ = {
+			isa = PBXGroup;
+			children = (
+				CC5EE65F229B861E007851DA /* RCTNendMediaViewManagerBridge.m */,
+				CC5EE660229B861E007851DA /* RCTNendVideoNativeAdBridge.m */,
+				CC5EE661229B861E007851DA /* RCTNendNativeAdBridge.m */,
+				CC5EE662229B861E007851DA /* RCTNendVideoAdBridge.m */,
+				CC5EE663229B861E007851DA /* RCTNendUserFeatureBridge.m */,
+				CC5EE664229B861E007851DA /* RCTNendInterstitialAdBridge.m */,
+				CC5EE665229B861E007851DA /* RCTNendAdViewManagerBridge.m */,
+			);
+			path = bridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC5EE650229B8518007851DA /* RNNendBridger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC5EE658229B8518007851DA /* Build configuration list for PBXNativeTarget "RNNendBridger" */;
+			buildPhases = (
+				CC5EE64D229B8518007851DA /* Sources */,
+				CC5EE64E229B8518007851DA /* Frameworks */,
+				CC5EE64F229B8518007851DA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNNendBridger;
+			productName = RNNendBridger;
+			productReference = CC5EE651229B8518007851DA /* libRNNendBridger.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC5EE649229B8518007851DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "F@N";
+				TargetAttributes = {
+					CC5EE650229B8518007851DA = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = CC5EE64C229B8518007851DA /* Build configuration list for PBXProject "RNNendBridger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CC5EE648229B8518007851DA;
+			productRefGroup = CC5EE652229B8518007851DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC5EE650229B8518007851DA /* RNNendBridger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC5EE64D229B8518007851DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5EE678229B862C007851DA /* RCTNendVideoAd.swift in Sources */,
+				CC5EE667229B861E007851DA /* RCTNendVideoNativeAdBridge.m in Sources */,
+				CC5EE66B229B861E007851DA /* RCTNendInterstitialAdBridge.m in Sources */,
+				CC5EE67A229B862C007851DA /* RCTNendMediaViewManager.swift in Sources */,
+				CC5EE677229B862C007851DA /* RCTNendNativeAd.swift in Sources */,
+				CC5EE675229B862C007851DA /* RCTNendVideoNativeAd.swift in Sources */,
+				CC5EE679229B862C007851DA /* RCTNendInterstitialAd.swift in Sources */,
+				CC5EE674229B862C007851DA /* RCTNendAdViewManager.swift in Sources */,
+				CC5EE668229B861E007851DA /* RCTNendNativeAdBridge.m in Sources */,
+				CC5EE655229B8518007851DA /* RNNendBridger.swift in Sources */,
+				CC5EE676229B862C007851DA /* RCTNendUserFeature.swift in Sources */,
+				CC5EE66A229B861E007851DA /* RCTNendUserFeatureBridge.m in Sources */,
+				CC5EE66C229B861E007851DA /* RCTNendAdViewManagerBridge.m in Sources */,
+				CC5EE666229B861E007851DA /* RCTNendMediaViewManagerBridge.m in Sources */,
+				CC5EE669229B861E007851DA /* RCTNendVideoAdBridge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CC5EE656229B8518007851DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC5EE657229B8518007851DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC5EE659229B8518007851DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EH6M2BH4ZR;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../../ios/Pods/**";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNNendBridger/RNNendBridger-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC5EE65A229B8518007851DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EH6M2BH4ZR;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../../ios/Pods/**";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNNendBridger/RNNendBridger-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC5EE64C229B8518007851DA /* Build configuration list for PBXProject "RNNendBridger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5EE656229B8518007851DA /* Debug */,
+				CC5EE657229B8518007851DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC5EE658229B8518007851DA /* Build configuration list for PBXNativeTarget "RNNendBridger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5EE659229B8518007851DA /* Debug */,
+				CC5EE65A229B8518007851DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC5EE649229B8518007851DA /* Project object */;
+}

@@ -1,23 +1,27 @@
 {
-  "name": "AwesomeProject",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
-  },
-  "dependencies": {
-    "react": "16.4.1",
-    "react-native": "0.56.0",
-    "react-navigation": "^2.7.0"
-  },
-  "devDependencies": {
-    "babel-jest": "23.2.0",
-    "babel-preset-react-native": "^5",
-    "jest": "23.3.0",
-    "react-test-renderer": "16.4.1"
-  },
-  "jest": {
-    "preset": "react-native"
-  }
+    "name": "react-native-nend-bridger",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "author": "F@N Communications, Inc.",
+    "license": "MIT",
+    "description": "",
+    "main": "src/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fan-ADN/nendSDK-react-native.git"
+    },
+    "peerDependencies": {
+        "react": "16.8.3",
+        "react-native": "0.59.8"
+    },
+    "devDependencies": {
+        "@babel/core": "7.4.4",
+        "@babel/runtime": "7.4.4",
+        "babel-jest": "24.8.0",
+        "jest": "24.8.0"
+    },
+    "jest": {
+        "preset": "react-native"
+    }
 }

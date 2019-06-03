@@ -2,21 +2,27 @@
 
 ## Overview
 
-nendの広告を[React Native](https://facebook.github.io/react-native/)で表示するサンプルです。
+This sample is showing nend AD on [React Native](https://facebook.github.io/react-native/).
+
+## Caution
+
+**This sample and React Native Bridging-Code are Experimental.**
+
+You can use these codes, but **WE DO NOT GUARANTEED** these quality if you use these for production app.
 
 ## Requirement
 
 - Android Studio: 3.3
-- Xcode: 9.4.1
-- react: 16.4.1
-- react-native: 0.56.0
+- Xcode: 10.2.1
+- react: 16.8.3
+- react-native: 0.59.8
 - react-native-cli: 2.0.1
 
 ## Usage (iOS)
 
-`iOS`ディレクトリに移動し、[`CocoaPods`](http://guides.cocoapods.org/using/getting-started.html)で`nendSDK`をインストールしてからアプリを起動してください。
+Please install `nendSDK` via [`CocoaPods`](http://guides.cocoapods.org/using/getting-started.html) into `ios` directory before build as `react-native`.
 
-## Supported ad formats
+## Available ad formats
 
 - Banner
 - Interstitial
