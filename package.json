@@ -1,11 +1,10 @@
 {
     "name": "react-native-nend-bridger",
     "version": "0.0.1",
-    "description": "",
+    "description": "This sample and React Native Bridging-Code are Experimental.",
     "main": "index.js",
-    "author": "F@N Communications, Inc.",
+    "author": "fan-communications <fancs.adndev01@gmail.com> (https://github.com/fan-ADN)",
     "license": "MIT",
-    "description": "",
     "main": "src/index.js",
     "repository": {
         "type": "git",
