@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "description": "This sample and React Native Bridging-Code are Experimental.",
     "main": "index.js",
-    "author": "fan-communications <fancs.adndev01@gmail.com> (https://github.com/fan-ADN)",
+    "author": "fan-communications <ossdev@fancs.com> (https://github.com/fan-ADN)",
     "license": "MIT",
     "main": "src/index.js",
     "repository": {
