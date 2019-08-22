@@ -17,12 +17,15 @@ public class NendAdPackage implements ReactPackage {
                 new NendInterstitialVideoAdModule(reactContext),
                 new NendInterstitialAdModule(reactContext),
                 new NendNativeAdModule(reactContext),
+                new NendVideoNativeAdModule(reactContext),
                 new NendUserFeatureModule(reactContext));
     }
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-        return Arrays.<ViewManager>asList(new NendAdViewManager());
+        return Arrays.<ViewManager>asList(
+                new NendMediaViewManager(),
+                new NendAdViewManager());
     }
 
 }

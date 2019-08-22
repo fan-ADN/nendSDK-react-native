@@ -25,5 +25,5 @@ repositories {
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
-    api 'net.nend.android:nend-sdk:5.1.0'
+    api 'net.nend.android:nend-sdk:5.1.2'
 }
