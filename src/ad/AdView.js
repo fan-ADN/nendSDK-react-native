@@ -60,7 +60,7 @@ export default class AdView extends React.Component<Props, State> {
     loadAd() {
         UIManager.dispatchViewManagerCommand(
             findNodeHandle(this),
-            UIManager.RCTNendAdView.Commands.loadAd,
+            UIManager.getViewManagerConfig('RCTNendAdView').Commands.loadAd,
             null
         );
     }
@@ -68,7 +68,7 @@ export default class AdView extends React.Component<Props, State> {
     resume() {
         UIManager.dispatchViewManagerCommand(
             findNodeHandle(this),
-            UIManager.RCTNendAdView.Commands.resume,
+            UIManager.getViewManagerConfig('RCTNendAdView').Commands.resume,
             null
         );
     }
@@ -76,7 +76,7 @@ export default class AdView extends React.Component<Props, State> {
     pause() {
         UIManager.dispatchViewManagerCommand(
             findNodeHandle(this),
-            UIManager.RCTNendAdView.Commands.pause,
+            UIManager.getViewManagerConfig('RCTNendAdView').Commands.pause,
             null
         );
     }
