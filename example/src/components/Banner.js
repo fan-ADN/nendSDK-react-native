@@ -28,6 +28,7 @@ export default class Banner extends React.Component<{}, {}> {
         return (
           <View style={styles.container}>
             <AdView
+                accessibilityLabel='NendBannerAdView'
                 spotId={spotId}
                 apiKey={apiKey}
                 adjustSize={true} // 広告のサイズを画面の横幅に合わせて調節 (省略した場合はfalse)

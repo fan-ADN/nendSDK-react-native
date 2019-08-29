@@ -62,3 +62,4 @@ buck-out/
 
 # Example
 example/node_modules/
+example/reports/

@@ -19,7 +19,7 @@ export default class Button extends React.Component<Props> {
     render() {
         return (
           <TouchableHighlight onPress={this.props.onPress} underlayColor='white'>
-            <View style={styles.button}>
+            <View style={styles.button} accessibilityLabel={this.props.title} >
               <Text style={styles.buttonText}>{this.props.title}</Text>
             </View>
           </TouchableHighlight>

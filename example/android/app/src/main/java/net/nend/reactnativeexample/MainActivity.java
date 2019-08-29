@@ -1,4 +1,4 @@
-package com.example;
+package net.nend.reactnativeexample;
 
 import com.facebook.react.ReactActivity;
 
