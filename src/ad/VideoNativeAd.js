@@ -5,6 +5,7 @@
 import {
     NativeModules,
     NativeEventEmitter,
+    Platform
 } from 'react-native';
 
 import type EmitterSubscription from 'EmitterSubscription';
@@ -63,7 +64,13 @@ export class VideoNativeAd {
     }
 
     registerClickableViews(tags: [number]) {
-        videoNativeAd.registerClickableViews(this.videoId, tags);        
+        videoNativeAd.registerClickableViews(this.videoId, tags);
+    }
+
+    performAdClick() {
+        if (Platform.OS === 'android') {
+            videoNativeAd.performAdClick(this.videoId);
+        }
     }
 
     destroy() {

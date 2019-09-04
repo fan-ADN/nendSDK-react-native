@@ -13,7 +13,7 @@ buildscript {
         jcenter()
         maven {
             // nendSDK
-            url 'http://fan-adn.github.io/nendSDK-Android-lib/library'
+            url 'http://fan-adn.github.io/nendSDK-Android-lib-test/library'
         }
     }
     dependencies {
@@ -35,7 +35,7 @@ allprojects {
         }
         maven {
             // nendSDK
-            url 'http://fan-adn.github.io/nendSDK-Android-lib/library'
+            url 'http://fan-adn.github.io/nendSDK-Android-lib-test/library'
         }
     }
 }

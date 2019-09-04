@@ -87,8 +87,9 @@ export default class Native extends React.Component<{}, State> {
     render() {
         return (
           <View style={styles.container}>
-            <TouchableHighlight 
-              onPress={() => {if (this._ad) this._ad.performClick()}} // Android の場合のみ呼び出し必須
+            <TouchableHighlight
+              accessibilityLabel='AdClickPerformer'
+              onPress={() => {if (this._ad) this._ad.performAdClick()}} // Required on Android
               underlayColor="white">
               <View
                 style={styles.adRoot}
@@ -103,7 +104,11 @@ export default class Native extends React.Component<{}, State> {
                     <Text style={styles.title} ellipsizeMode={'tail'} numberOfLines={1}>{this.state.title}</Text>
                     <View style={styles.prContainer}>
                       <Text style={styles.promotionName}>{this.state.promotionName}</Text>
-                      <Text style={styles.pr} ref={component => this._prText = component}>{this.state.adExplicitly}</Text>
+                      <Text
+                        accessibilityLabel='InformationClickPerformer'
+                        style={styles.pr}
+                        ref={component => this._prText = component}>{this.state.adExplicitly}
+                      </Text>
                     </View>
                   </View>
                 </View>

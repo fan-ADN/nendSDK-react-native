@@ -19,6 +19,8 @@ import net.nend.android.NendAdNativeVideo;
 import net.nend.android.NendAdNativeVideoListener;
 import net.nend.android.NendAdNativeVideoLoader;
 import net.nend.android.NendAdUserFeature;
+import net.nend.android.internal.connectors.NendNativeVideoAdConnector;
+import net.nend.android.internal.connectors.NendNativeVideoAdConnectorFactory;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,8 +36,8 @@ public class NendVideoNativeAdModule extends ReactContextBaseJavaModule implemen
 
     private static final String REACT_CLASS = NAME;
     private final Map<String, NendAdNativeVideoLoader> loaderCache = new HashMap<>();
-    private final SparseArray<NendAdNativeVideo> videoNativeAdCache = new SparseArray<>();
-    private final WeakHashMap<NendAdNativeVideo, Integer> videoNativeAdToReferenceId = new WeakHashMap<>();
+    private final SparseArray<NendNativeVideoAdConnector> videoNativeAdCache = new SparseArray<>();
+    private final WeakHashMap<NendNativeVideoAdConnector, Integer> videoNativeAdToReferenceId = new WeakHashMap<>();
     private final AtomicInteger videoNativeAdReferenceId = new AtomicInteger(0);
 
     public NendVideoNativeAdModule(ReactApplicationContext reactContext) {
@@ -84,8 +86,9 @@ public class NendVideoNativeAdModule extends ReactContextBaseJavaModule implemen
                         @Override
                         public void onSuccess(NendAdNativeVideo nendAdNativeVideo) {
                             final int refId = videoNativeAdReferenceId.incrementAndGet();
-                            videoNativeAdCache.put(refId, nendAdNativeVideo);
-                            videoNativeAdToReferenceId.put(nendAdNativeVideo, refId);
+                            final NendNativeVideoAdConnector connector = NendNativeVideoAdConnectorFactory.createNativeVideoAdConnector(nendAdNativeVideo);
+                            videoNativeAdCache.put(refId, connector);
+                            videoNativeAdToReferenceId.put(connector, refId);
                             nendAdNativeVideo.setListener(NendVideoNativeAdModule.this);
                             promise.resolve(convertMap(nendAdNativeVideo, refId));
                         }
@@ -105,7 +108,7 @@ public class NendVideoNativeAdModule extends ReactContextBaseJavaModule implemen
         UiThreadUtil.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                final NendAdNativeVideo videoAd = videoNativeAdCache.get(refId);
+                final NendAdNativeVideo videoAd = getVideoNativeAdCache(refId);
                 final Activity activity = getCurrentActivity();
                 ArrayList<View> views = new ArrayList<>();
                 if (videoAd != null && activity != null) {
@@ -156,6 +159,20 @@ public class NendVideoNativeAdModule extends ReactContextBaseJavaModule implemen
     }
 
     @ReactMethod
+    public void performAdClick(final int refId) {
+        UiThreadUtil.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                final Activity activity = getCurrentActivity();
+                final NendNativeVideoAdConnector connector = getVideoNativeAdCache(refId);
+                if (activity != null && connector != null) {
+                    connector.clickAd(activity);
+                }
+            }
+        });
+    }
+
+    @ReactMethod
     public void destroyLoader(final String spotId) {
         UiThreadUtil.runOnUiThread(new Runnable() {
             @Override
@@ -173,7 +190,7 @@ public class NendVideoNativeAdModule extends ReactContextBaseJavaModule implemen
         UiThreadUtil.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                NendAdNativeVideo videoAd = videoNativeAdCache.get(refId);
+                NendAdNativeVideo videoAd = getVideoNativeAdCache(refId);
                 if (videoAd != null) {
                     videoAd.deactivate();
                     videoNativeAdCache.remove(refId);
@@ -182,7 +199,7 @@ public class NendVideoNativeAdModule extends ReactContextBaseJavaModule implemen
         });
     }
 
-    NendAdNativeVideo getVideoNativeAdCache(int refId) {
+    NendNativeVideoAdConnector getVideoNativeAdCache(int refId) {
         return videoNativeAdCache.get(refId);
     }
 

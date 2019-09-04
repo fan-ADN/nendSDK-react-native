@@ -17,6 +17,8 @@ import com.facebook.react.views.text.ReactTextView;
 
 import net.nend.android.NendAdNative;
 import net.nend.android.NendAdNativeClient;
+import net.nend.android.internal.connectors.NendNativeAdConnector;
+import net.nend.android.internal.connectors.NendNativeAdConnectorFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -95,16 +97,15 @@ public class NendNativeAdModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void performClick(final int refId) {
+    public void performAdClick(final int refId) {
         UiThreadUtil.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 final Activity activity = getCurrentActivity();
                 final NendAdNative nativeAd = nativeAdCache.get(refId);
                 if (activity != null && nativeAd != null) {
-                    Uri uri = Uri.parse(nativeAd.getClickUrl());
-                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                    activity.startActivity(intent);
+                    final NendNativeAdConnector connector = NendNativeAdConnectorFactory.createNativeAdConnector(nativeAd);
+                    connector.performAdClick(activity);
                 }
             }
         });

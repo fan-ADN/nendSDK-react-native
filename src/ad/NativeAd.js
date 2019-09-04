@@ -37,9 +37,9 @@ export class NativeAd {
         }
     }
 
-    performClick() {
+    performAdClick() {
         if (Platform.OS === 'android') {
-            nativeAd.performClick(this._referenceId);
+            nativeAd.performAdClick(this._referenceId);
         }
     }
 

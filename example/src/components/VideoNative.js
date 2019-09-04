@@ -23,8 +23,10 @@ type State = {
     callToAction: string,
     userRating: number,
     userRatingCount: number,
-    logoImageUrl: string
+    logoImageUrl: string,
+    event: string // For checking state. it's not required.
 };
+var eventListened = '';
 
 export default class VideoNative extends React.Component<{}, State> {
     _adLoader: VideoNativeAdLoader;
@@ -65,7 +67,8 @@ export default class VideoNative extends React.Component<{}, State> {
             callToAction: '',
             userRating: -1,
             userRatingCount: -1,
-            logoImageUrl: ''
+            logoImageUrl: '',
+            event: '',
         };
     }
 
@@ -82,7 +85,8 @@ export default class VideoNative extends React.Component<{}, State> {
                 callToAction: videoAd.callToAction,
                 advertiser: videoAd.advertiserName,
                 userRating: videoAd.userRating,
-                userRatingCount: videoAd.userRatingCount
+                userRatingCount: videoAd.userRatingCount,
+                event: this.eventListened
             });
             if (this._cta) {
                 const tag: ?number = findNodeHandle(this._cta);
@@ -107,6 +111,21 @@ export default class VideoNative extends React.Component<{}, State> {
         }
     }
 
+    _onEvent(listened) {
+        console.log(listened)
+        this.eventListened = listened;
+        this.setState({
+            logoImageUrl: this._videoAd.logoImageUrl,
+            title: this._videoAd.title,
+            description: this._videoAd.description,
+            callToAction: this._videoAd.callToAction,
+            advertiser: this._videoAd.advertiserName,
+            userRating: this._videoAd.userRating,
+            userRatingCount: this._videoAd.userRatingCount,
+            event: this.eventListened
+        });
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -118,19 +137,25 @@ export default class VideoNative extends React.Component<{}, State> {
               <Text style={styles.title} ellipsizeMode={'tail'} numberOfLines={1}>{this.state.title}</Text>
               <Text>{this.state.advertiser}</Text>
               <MediaView
+                accessibilityLabel='NendAdNativeMediaView'
                 style={styles.media}
                 ref={component => {this._mediaView = component}}
-                onPlaybackStarted={() => console.log('onPlaybackStarted')}
-                onPlaybackStopped={() => console.log('onPlaybackStopped')}
-                onPlaybackCompleted={() => console.log('onPlaybackCompleted')}
-                onPlaybackError={() => console.log('onPlaybackError')}
-                onFullScreenOpened={() => console.log('onFullScreenOpened')}
-                onFullScreenClosed={() => console.log('onFullScreenClosed')}
+                onPlaybackStarted={() => this._onEvent('onPlaybackStarted')}
+                onPlaybackStopped={() => this._onEvent('onPlaybackStopped')}
+                onPlaybackCompleted={() => this._onEvent('onPlaybackCompleted')}
+                onPlaybackError={() => this._onEvent('onPlaybackError')}
+                onFullScreenOpened={() => this._onEvent('onFullScreenOpened')}
+                onFullScreenClosed={() => this._onEvent('onFullScreenClosed')}
               />
               <Text ellipsizeMode={'tail'} numberOfLines={3}>{this.state.description}</Text>
               <Text>{this.state.userRating}, {this.state.userRatingCount}</Text>
-              <Button ref={component => this._cta = component} title={this.state.callToAction} onPress={() => {}} />
-              <Text>PR</Text>
+              <Button
+                accessibilityLabel={this.state.callToAction}
+                ref={component => this._cta = component}
+                title={this.state.callToAction}
+                onPress={() => {if (this._videoAd) this._videoAd.performAdClick()}} // Required on Android
+               />
+              <Text accessibilityLabel={this.state.event}>{this.state.event}</Text>
             </View>
         );
     }

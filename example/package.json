@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "E2E_DEVICE=\"*\" jest --testMatch=\"**/__tests__/**/!(*e2e.js)\"",
-    "test:e2e": "jest --testMatch=\"**/__tests__/**/*e2e.js\"",
+    "test:e2e": "jest --testMatch=\"**/__tests__/**/*e2e.js\" --runInBand",
     "test:e2e:android": "E2E_DEVICE=\"android-emulator\" npm run test:e2e",
     "test:e2e:ios": "E2E_DEVICE=\"ios-simulator\"  npm run test:e2e"
   },
