@@ -20,10 +20,7 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-
-# CocoaPod
-*/Pods/*
-*/Podfile.lock
+project.xcworkspace
 
 # Android/IntelliJ
 #
@@ -38,13 +35,12 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
-react-native-nend-bridger-*.*.*.tgz
-package/
 
 # BUCK
 buck-out/
 \.buckd/
 *.keystore
+!debug.keystore
 
 # fastlane
 #
@@ -60,5 +56,5 @@ buck-out/
 # Bundle artifact
 *.jsbundle
 
-# Example
-example/node_modules/
+# CocoaPods
+/ios/Pods/
