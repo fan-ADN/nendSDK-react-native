@@ -112,6 +112,8 @@ extension NADInterstitialClickType {
       return "CLOSE"
     case .INFORMATION:
       return "INFORMATION"
+    @unknown default:
+        fatalError()
     }
   }
 }
@@ -133,6 +135,8 @@ extension NADInterstitialShowResult {
       return "AD_REQUEST_INCOMPLETE"
     case .AD_DOWNLOAD_INCOMPLETE:
       return "AD_DOWNLOAD_INCOMPLETE"
+    @unknown default:
+        fatalError()
     }
   }
 }

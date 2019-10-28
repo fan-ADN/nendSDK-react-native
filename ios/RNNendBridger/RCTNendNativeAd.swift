@@ -34,7 +34,7 @@ class RCTNendNativeAd: NSObject, RCTBridgeModule {
       client = NADNativeClient(spotId: spotId, apiKey: apiKey)
       clientCache[spotId] = client
     }
-    guard let explicitly = self.adExplicitlyList.index(of: adExplicitly) else { return }
+    guard let explicitly = self.adExplicitlyList.firstIndex(of: adExplicitly) else { return }
     client!.load { [weak self] (ad, error) in
       guard let `self` = self else { return }
       if let nativeAd = ad {
@@ -74,14 +74,14 @@ class RCTNendNativeAd: NSObject, RCTBridgeModule {
 
 extension NADNative {
   func toJSON(refId: Int, adExplicitly: NADNativeAdvertisingExplicitly) -> [String: Any] {
-    return ["adImageUrl": imageUrl,
-            "logoImageUrl": logoUrl != nil ? logoUrl : "",
-            "title": shortText,
-            "content": longText,
-            "promotionName": promotionName,
-            "promotionUrl": promotionUrl,
-            "callToAction": actionButtonText,
-            "adExplicitly": prText(for: adExplicitly),
+    return ["adImageUrl": imageUrl ?? "",
+            "logoImageUrl": logoUrl ?? "",
+            "title": shortText ?? "",
+            "content": longText ?? "",
+            "promotionName": promotionName ?? "",
+            "promotionUrl": promotionUrl ?? "",
+            "callToAction": actionButtonText ?? "",
+            "adExplicitly": prText(for: adExplicitly) ?? "",
             "referenceId": refId];
   }
 }

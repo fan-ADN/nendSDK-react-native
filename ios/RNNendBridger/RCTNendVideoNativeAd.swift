@@ -67,7 +67,7 @@ class RCTNendVideoNativeAd: RCTEventEmitter {
   @objc(registerClickableViews:reactTags:)
   func registerClickableViews(refernceId: Int, reactTags: [NSNumber]) {
     if let videoAd = videoAdCache[refernceId] {
-      videoAd.registerInteractionViews(reactTags.flatMap { bridge.uiManager.view(forReactTag: $0) })
+        videoAd.registerInteractionViews(reactTags.compactMap { bridge.uiManager.view(forReactTag: $0) })
     }
   }
   

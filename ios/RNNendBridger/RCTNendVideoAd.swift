@@ -170,7 +170,7 @@ class RCTNendRewardedVideoAd: RCTEventEmitter {
 extension RCTNendRewardedVideoAd: NADRewardedVideoDelegate {
   func nadRewardVideoAd(_ nadRewardedVideoAd: NADRewardedVideo!, didReward reward: NADReward!) {
     delegate.sendEvent(emitter: self, videoAd: nadRewardedVideoAd, eventType: "onRewarded",
-                       args: ["rewardName": reward.name, "rewardAmount": reward.amount])
+                       args: ["rewardName": reward.name!, "rewardAmount": reward.amount])
   }
   
   func nadRewardVideoAdDidReceiveAd(_ nadRewardedVideoAd: NADRewardedVideo!) {
