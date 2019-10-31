@@ -19,6 +19,7 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
+  - NendSDK_iOS (5.3.0)
   - RCTRequired (0.61.1)
   - RCTTypeSafety (0.61.1):
     - FBLazyVector (= 0.61.1)
@@ -217,6 +218,11 @@ PODS:
     - React-cxxreact (= 0.61.1)
     - React-jsi (= 0.61.1)
     - ReactCommon/jscallinvoker (= 0.61.1)
+  - RNGestureHandler (1.4.1):
+    - React
+  - RNNendBridger (0.0.1):
+    - NendSDK_iOS
+    - React
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -247,11 +253,15 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNNendBridger (from `../node_modules/react-native-nend-bridger`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - boost-for-react-native
+  trunk:
+    - NendSDK_iOS
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -302,6 +312,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
+  RNNendBridger:
+    :path: "../node_modules/react-native-nend-bridger"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -312,6 +326,7 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: c4cf958af1b97799b524f63a26a1c509c0295b04
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
+  NendSDK_iOS: 42684cd12395127ea6cf113009ecb4714cc87fe3
   RCTRequired: 53825815218847d3e9c7b6d92ad2d197a926d51e
   RCTTypeSafety: d886540c518e53064dfa081bf7693fd650699b92
   React: 5dea58967c421bd1fdf6b94c18b9ed0f5134683c
@@ -331,8 +346,10 @@ SPEC CHECKSUMS:
   React-RCTText: 81b62b4e7f11531a5154e4daa5617670d5a2d5de
   React-RCTVibration: 8be61459e3749d1fb02cf414edd05b3007622882
   ReactCommon: 4fba5be89efdf0b5720e0adb3d8d7edf6e532db0
+  RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
+  RNNendBridger: 9b5aee3eb462c0018fe8022bcb640311a51e2506
   Yoga: d8c572ddec8d05b7dba08e4e5f1924004a177078
 
-PODFILE CHECKSUM: 79310af6b976c356911a8a833e9b99c3399fdda3
+PODFILE CHECKSUM: 71a2bea01cc71e949b01502bbe4f30d4f457a3d2
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.8.3
