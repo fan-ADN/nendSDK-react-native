@@ -1,3 +1,13 @@
+if [ $# -eq 1 ] && [ $1 = "DO" ]; then
+    echo "Re-create React Native example app!!"
+else
+    echo "This script is not recommended usually." 1>&2
+    echo "Please use \"prepare_example.sh\" before using this script." 1>&2
+    echo "Then use this script if \"prepare_example.sh\" is not working or enough for your build environment..." 1>&2
+    echo "And this script does not guarantee to recover example app." 1>&2
+    exit 1
+fi
+
 rm -rf example/
 
 rm react-native-nend-bridger-[0-9].[0-9].[0-9].tgz

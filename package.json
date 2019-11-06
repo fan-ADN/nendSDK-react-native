@@ -1,6 +1,6 @@
 {
     "name": "react-native-nend-bridger",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "This sample and React Native Bridging-Code are Experimental.",
     "main": "index.js",
     "author": "fan-communications <ossdev@fancs.com> (https://github.com/fan-ADN)",
@@ -11,8 +11,8 @@
         "url": "https://github.com/fan-ADN/nendSDK-react-native.git"
     },
     "peerDependencies": {
-        "react": "16.8.3",
-        "react-native": "0.59.8"
+        "react": "16.9.0",
+        "react-native": "0.61.1"
     },
     "devDependencies": {
         "@babel/core": "7.4.4",

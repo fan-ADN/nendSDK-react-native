@@ -1,7 +1,7 @@
 var devices = {
     'ios-simulator': {
         platformName: 'iOS',
-        platformVersion: '12.4',
+        platformVersion: '13.1',
         deviceName: 'iPhone Simulator', // or if you choose target like -> "iPhone X"
         app: process.cwd() + '/ios/build/example/Build/Products/Debug-iphonesimulator/example.app',
     },
