@@ -1,6 +1,6 @@
 {
     "name": "react-native-nend-bridger",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "This sample and React Native Bridging-Code are Experimental.",
     "main": "index.js",
     "author": "fan-communications <ossdev@fancs.com> (https://github.com/fan-ADN)",

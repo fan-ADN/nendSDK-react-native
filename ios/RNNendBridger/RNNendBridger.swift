@@ -2,7 +2,7 @@
 //  RNNendBridger.swift
 //  RNNendBridger
 //
-//  Copyright © 2019 F@N. All rights reserved.
+//  Copyright © 2019 FAN. All rights reserved.
 //
 
 class RNNendBridger {

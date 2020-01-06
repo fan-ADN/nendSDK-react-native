@@ -220,7 +220,7 @@ PODS:
     - ReactCommon/jscallinvoker (= 0.61.1)
   - RNGestureHandler (1.4.1):
     - React
-  - RNNendBridger (0.0.2):
+  - RNNendBridger (0.0.3):
     - NendSDK_iOS
     - React
   - Yoga (1.14.0)
@@ -347,7 +347,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 8be61459e3749d1fb02cf414edd05b3007622882
   ReactCommon: 4fba5be89efdf0b5720e0adb3d8d7edf6e532db0
   RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
-  RNNendBridger: 46367ac3736b8fac44fb7ff28c9f6f585924cf7c
+  RNNendBridger: d717e0b56d84c1aee6677d243c9ea04ab4222c21
   Yoga: d8c572ddec8d05b7dba08e4e5f1924004a177078
 
 PODFILE CHECKSUM: 71a2bea01cc71e949b01502bbe4f30d4f457a3d2
