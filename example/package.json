@@ -23,7 +23,7 @@
     "@babel/core": "7.6.2",
     "@babel/runtime": "7.6.2",
     "@react-native-community/eslint-config": "0.0.3",
-    "appium": "^1.15.0",
+    "appium": "^1.22.3",
     "appium-doctor": "^1.12.0",
     "babel-jest": "24.9.0",
     "eslint": "6.4.0",
