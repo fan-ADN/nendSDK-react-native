@@ -1,5 +1,10 @@
 # nendSDK-react-native
 
+## Notice
+Experimental release and support has ended.
+
+---
+
 ## Overview
 
 This sample is showing nend AD on [React Native](https://facebook.github.io/react-native/).
